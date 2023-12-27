@@ -25,7 +25,7 @@ defineProps({
 
 
 const state = reactive({ count: 0 })
-const data = reactive({ text1: "" })
+const data = reactive({ text1: "hello" })
 
 onMounted(async () => {
   const rsp1 = await fetch(`http://127.0.0.1:8010/hello`).then(rsp => rsp.text())
